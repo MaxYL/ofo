@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+
+<button> 按钮1 </button>
+<button> 按钮2 </button>
+<button> 按钮3 </button>
+<button> 按钮4 </button>
+<button> 按钮5 </button>
+<button> 按钮6 </button>
+<script>
+function func(e){
+	consloe.log(e)
+ alert(e.target.innerHTML);
+}
+var btns= document.getElementsByTagName("button");
+for(i=0;i<6;i++)
+btns[i].onclick = func;
+
+</script>
+ </body>
+</html>
+
