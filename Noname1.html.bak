@@ -18,8 +18,12 @@
 <button> 按钮6 </button>
 <script>
 function func(e){
-	consloe.log(e)
- alert(e.target.innerHTML);
+	if(e.target.innerHTML==" 按钮2 "
+	){
+ alert(" 谢谢惠顾！");
+ }
+ else(e.target.innerHTML==" 按钮6 "){
+ alert("恭喜你,中奖了");}
 }
 var btns= document.getElementsByTagName("button");
 for(i=0;i<6;i++)
